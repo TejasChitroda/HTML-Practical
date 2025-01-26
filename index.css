@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2874f0; /* Flipkart blue */
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar .left-section {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.navbar .search-bar .input-search-icon {
+    margin-right: 20px;
+}
+
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 15px;
+    background-color: #fff;
+}
+
+.navbar .search-icon {
+    display: none;
+}
+
+.navbar .search-bar input {
+    width: 500px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+.navbar .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .menu-icon {
+    display: none;
+}
+
+.navbar .menu a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar .menu a:hover {
+    text-decoration: underline;
+}
+
+.navbar .login-btn {
+    padding: 5px 35px;
+    background-color: #fff;
+    color: #2874f0;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.navbar .login-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.navbar .cart {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .cart img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.section-1 {
+    width: auto;
+    overflow: scroll;
+    height: 112px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+}
+.section-1-container{
+    width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-1-item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-1-item img {
+    width: 64px;
+    height: 64px;
+}
+
+/* Media query to hide search bar on smaller screens */
+@media (max-width: 1030px) {
+    .navbar .search-bar {
+        display: none;
+    }
+
+    .navbar .search-icon {
+        display: block;
+    }
+}
+@media (max-width: 485px) {
+    .navbar .right-section {
+        display: none;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+    }
+}
