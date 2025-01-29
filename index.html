@@ -34,26 +34,36 @@
             </svg>
           </span>
         </div>
-        <div class="search-icon">
+        <!-- <div class="search-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
             class="lucide lucide-search">
             <circle cx="11" cy="11" r="8" />
             <path d="m21 21-4.3-4.3" />
           </svg>
-        </div>
+        </div> -->
       </div>
-      <div class="right-section" style="display: flex; justify-content: space-around;">
+      <div class="right-section d-none d-sm-flex justify-content-around">
         <button class="login-btn">Login</button>
         <div class="menu" style="display: flex; justify-content: space-around">
           <div>
-            <a href="#">More</a>
 
-            <svg style="margin-right: 10px; rotate: -90deg" width="4.7" height="8" viewBox="0 0 16 27"
-              xmlns="http://www.w3.org/2000/svg" class="zZ3yfL">
-              <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff" class="_2gTTdy">
-              </path>
-            </svg>
+
+            <div class="dropdown">
+              <button class="btn  dropdown-toggle" style="color: white;" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                More
+              </button>
+              <ul class="dropdown-menu ps-2">
+                <li>Notification</li>
+                <li>custumer support</li>
+                <li>Download App</li>
+              </ul>
+            </div>
+
+
+
+
           </div>
           <div class="cart">
             <svg style="margin-left: 10px" class="V3C5bO" width="14" height="14" viewBox="0 0 16 16"
@@ -66,7 +76,7 @@
           </div>
         </div>
       </div>
-      <div class="menu-icon">
+      <!-- <div class="menu-icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
           class="lucide lucide-align-justify">
@@ -74,7 +84,68 @@
           <path d="M3 18h18" />
           <path d="M3 6h18" />
         </svg>
+      </div> -->
+
+      <!-- offcanvas -->
+
+      <button class="btn btn-primary d-md-none burger-icon" style="background-color: #2874f0;" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-align-justify">
+          <path d="M3 12h18" />
+          <path d="M3 18h18" />
+          <path d="M3 6h18" />
+        </svg>
+      </button>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel" style="background-color: #2874f0;">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title mt-5" style="font-weight: 600; color: white;" id="offcanvasExampleLabel">Flipkart</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <div class="right-section d-block d-sm-none justify-content-start" >
+              <button class="login-btn">Login</button>
+              <div class="menu mt-3" >
+                <div>
+      
+      
+                  <div class="dropdown">
+                    <button class="btn  dropdown-toggle" style="color: white;" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      More
+                    </button>
+                    <ul class="dropdown-menu ps-2">
+                      <li>Notification</li>
+                      <li>custumer support</li>
+                      <li>Download App</li>
+                    </ul>
+                  </div>
+      
+      
+      
+      
+                </div>
+                <div class="cart mt-3">
+                  <svg style="margin-left: 10px" class="V3C5bO" width="14" height="14" viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="_1bS9ic"
+                      d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
+                      fill="#fff"></path>
+                  </svg>
+                  <a href="#">Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+
+
     </div>
   </header>
 
@@ -84,7 +155,9 @@
     <div class="section-1-container">
       <div class="section-1-item">
         <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/178cf5a874cd697a.png?q=100" alt="" />
-        Top Offer
+        <div class="d-flex justify-content-center align-items-center">
+          Top Offer <i class="fa-solid fa-caret-down ps-2"></i>
+        </div>
       </div>
       <div class="section-1-item">
         <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/d154c0b4d536c1cf.png?q=100" alt="" />
@@ -96,11 +169,15 @@
       </div>
       <div class="section-1-item">
         <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a11d5d13e54bf964.png?q=100" alt="" />
-        Fashion
+        <div class="d-flex justify-content-center align-items-center">
+          Fashion <i class="fa-solid fa-caret-down ps-2"></i>
+        </div>
       </div>
       <div class="section-1-item">
         <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/6e3e1efa83bc56c3.png?q=100" alt="" />
-        Electronics
+        <div class="d-flex justify-content-center align-items-center">
+          Electronincs <i class="fa-solid fa-caret-down ps-2"></i>
+        </div>
       </div>
       <div class="section-1-item">
         <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5972d5da375c81c7.png?q=100" alt="" />
@@ -108,7 +185,9 @@
       </div>
       <div class="section-1-item">
         <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b3e1225e6bda1c9e.png?q=100" alt="" />
-        Appliances
+        <div class="d-flex justify-content-center align-items-center">
+          Appliances <i class="fa-solid fa-caret-down ps-2"></i>
+        </div>
       </div>
       <div class="section-1-item">
         <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/1cfc2d91f717510a.png?q=100" alt="" />
@@ -116,7 +195,9 @@
       </div>
       <div class="section-1-item">
         <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5f09b2d254acb48a.png?q=100" alt="" />
-        Beuty Toys and more
+        <div class="d-flex justify-content-center align-items-center">
+          Beuty Toys and More <i class="fa-solid fa-caret-down ps-2"></i>
+        </div>
       </div>
     </div>
   </section>
@@ -124,7 +205,7 @@
 
   <!-- This is second section -->
 
-  <!-- this is  -->
+
 
 
   <div class="d-flex flex-column align-items-center main-section">
@@ -142,20 +223,20 @@
                 </div>
               </div>
               <div class="button-view-all pt-3">
-                <button class="btn btn-primary">View All</button>
+                <button class="btn btn-primary pt-2 pb-2" style="border-radius: 0px;">View All</button>
               </div>
             </div>
             <hr>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="d-flex d-inline-block">
-                  
-                  
+
+
                   <div class="card ms-3" style="width: 18rem; border: none;">
                     <img src="./images/dod/watch.jpg" class="card-img-top" alt="..." height="130px" width="80px">
                     <div class="card-body d-flex flex-column text-center">
                       <h5 class="card-title">Casio Watch</h5>
-                      <p  class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Upto 80%</p>
+                      <p class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Upto 80%</p>
                       <p class="text-secondary">Knockout Deals! for today</p>
                     </div>
                   </div>
@@ -166,7 +247,7 @@
                     <img src="./images/dod/bt.jpeg" class="card-img-top" alt="..." height="130px" width="80px">
                     <div class="card-body d-flex flex-column text-center">
                       <h5 class="card-title">Boat Speaker</h5>
-                      <p  class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
+                      <p class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
                       <p class="text-secondary">From Electronincs</p>
                     </div>
                   </div>
@@ -176,7 +257,7 @@
                     <img src="./images/dod/headphone.jpeg" class="card-img-top" alt="..." height="130px" width="80px">
                     <div class="card-body d-flex flex-column text-center">
                       <h5 class="card-title">Headphone</h5>
-                      <p  class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
+                      <p class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
                       <p class="text-secondary">From Electronincs</p>
                     </div>
                   </div>
@@ -187,7 +268,7 @@
                     <img src="./images/dod/pb.jpeg" class="card-img-top" alt="..." height="130px" width="80px">
                     <div class="card-body d-flex flex-column text-center">
                       <h5 class="card-title">Power Bank</h5>
-                      <p  class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
+                      <p class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
                       <p class="text-secondary">By Potronics ltd.</p>
                     </div>
                   </div>
@@ -197,7 +278,7 @@
                     <img src="./images/dod/laptop.jpeg" class="card-img-top" alt="..." height="130px" width="80px">
                     <div class="card-body d-flex flex-column text-center">
                       <h5 class="card-title">Hp Laptops</h5>
-                      <p  class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
+                      <p class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
                       <p class="text-secondary">Now just 70000* only !</p>
                     </div>
                   </div>
@@ -206,12 +287,12 @@
                     <img src="./images/dod/A1500.jpeg" class="card-img-top" alt="..." height="130px" width="80px">
                     <div class="card-body d-flex flex-column text-center">
                       <h5 class="card-title">Lava A1500</h5>
-                      <p  class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Flat 20% off</p>
+                      <p class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Flat 20% off</p>
                       <p class="text-secondary">Same Day Delivery</p>
                     </div>
                   </div>
 
-                
+
                 </div>
               </div>
 
@@ -223,13 +304,13 @@
 
               <div class="carousel-item ">
                 <div class="d-flex d-inline-block">
-                  
-                  
+
+
                   <div class="card ms-3" style="width: 18rem; border: none;">
                     <img src="./images/dod/watch.jpg" class="card-img-top" alt="..." height="130px" width="80px">
                     <div class="card-body d-flex flex-column text-center">
                       <h5 class="card-title">Casio Watch</h5>
-                      <p  class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Upto 80%</p>
+                      <p class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Upto 80%</p>
                       <p class="text-secondary">Knockout Deals! for today</p>
                     </div>
                   </div>
@@ -240,7 +321,7 @@
                     <img src="./images/dod/bt.jpeg" class="card-img-top" alt="..." height="130px" width="80px">
                     <div class="card-body d-flex flex-column text-center">
                       <h5 class="card-title">Boat Speaker</h5>
-                      <p  class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
+                      <p class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
                       <p class="text-secondary">From Electronincs</p>
                     </div>
                   </div>
@@ -250,7 +331,7 @@
                     <img src="./images/dod/headphone.jpeg" class="card-img-top" alt="..." height="130px" width="80px">
                     <div class="card-body d-flex flex-column text-center">
                       <h5 class="card-title">Headphone</h5>
-                      <p  class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
+                      <p class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
                       <p class="text-secondary">From Electronincs</p>
                     </div>
                   </div>
@@ -261,7 +342,7 @@
                     <img src="./images/dod/pb.jpeg" class="card-img-top" alt="..." height="130px" width="80px">
                     <div class="card-body d-flex flex-column text-center">
                       <h5 class="card-title">Power Bank</h5>
-                      <p  class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
+                      <p class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
                       <p class="text-secondary">By Potronics ltd.</p>
                     </div>
                   </div>
@@ -271,7 +352,7 @@
                     <img src="./images/dod/laptop.jpeg" class="card-img-top" alt="..." height="130px" width="80px">
                     <div class="card-body d-flex flex-column text-center">
                       <h5 class="card-title">Hp Laptops</h5>
-                      <p  class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
+                      <p class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Extra 10% off</p>
                       <p class="text-secondary">Now just 70000* only !</p>
                     </div>
                   </div>
@@ -280,7 +361,7 @@
                     <img src="./images/dod/A1500.jpeg" class="card-img-top" alt="..." height="130px" width="80px">
                     <div class="card-body d-flex flex-column text-center">
                       <h5 class="card-title">Lava A1500</h5>
-                      <p  class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Flat 20% off</p>
+                      <p class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Flat 20% off</p>
                       <p class="text-secondary">Same Day Delivery</p>
                     </div>
                   </div>
@@ -329,22 +410,22 @@
                 <h4 class="me-5 pt-3">Books and Music Instruments</h4>
                 <span>Shop Now!</span>
               </div>
-              
+
             </div>
             <div class="button-view-all pt-3">
-              <button class="btn btn-primary">View All</button>
+              <button class="btn btn-primary pt-2 pb-2" style="border-radius: 0px;">View All</button>
             </div>
           </div>
           <hr>
           <div class="carousel-inner">
             <div class="carousel-item active d-flex d-inline-block">
-              
-              
+
+
               <div class="card ms-3" style="width: 18rem; border: none;">
                 <img src="./images/books/guitar.jpeg" class="card-img-top" alt="..." height="130px" width="80px">
                 <div class="card-body d-flex flex-column text-center">
                   <h5 class="card-title">Acoustic Guitar</h5>
-                  <p  class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Upto 20% off</p>
+                  <p class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Upto 20% off</p>
                   <p class="text-secondary">Shop Now!</p>
                 </div>
               </div>
@@ -354,7 +435,7 @@
                 <img src="./images/books/drums.jpeg" class="card-img-top" alt="..." height="130px" width="80px">
                 <div class="card-body d-flex flex-column text-center">
                   <h5 class="card-title">Drum</h5>
-                  <p  class="mt-1.5 mb-1 text-success" style="color: green; font-weight: 250;">Upto 80% off</p>
+                  <p class="mt-1.5 mb-1 text-success" style="color: green; font-weight: 250;">Upto 80% off</p>
                   <p class="text-secondary">Shop Now!</p>
                 </div>
               </div>
@@ -362,16 +443,16 @@
                 <img src="./images/dod/microphone_acce.png" class="card-img-top" alt="..." height="130px" width="80px">
                 <div class="card-body d-flex flex-column text-center">
                   <h5 class="card-title">Accessories</h5>
-                  <p  class="mt-1.5 mb-1 text-success" style="color: green; font-weight: 250;">Flat 60% off</p>
+                  <p class="mt-1.5 mb-1 text-success" style="color: green; font-weight: 250;">Flat 60% off</p>
                   <p class="text-secondary">Microphone Accessories Shop Now!</p>
                 </div>
               </div>
-              
+
               <div class="card ms-3" style="width: 18rem; border: none;">
                 <img src="./images/books/The-Secret.png" class="card-img-top" alt="..." height="130px" width="30px">
                 <div class="card-body d-flex flex-column text-center">
                   <h5 class="card-title">The Secret</h5>
-                  <p  class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Flat 50% off</p>
+                  <p class="mt-1.5 mb-1" style="color: green; font-weight: 250;">Flat 50% off</p>
                   <p class="text-secondary">Top seller of 2024</p>
                 </div>
               </div>
@@ -381,7 +462,7 @@
                 <img src="./images/books/violin.jpeg" class="card-img-top" alt="..." height="130px" width="80px">
                 <div class="card-body d-flex flex-column text-center">
                   <h5 class="card-title">Violin</h5>
-                  <p  class="mt-1.5 mb-1 text-success" style="color: green; font-weight: 250;">Upto 5% off</p>
+                  <p class="mt-1.5 mb-1 text-success" style="color: green; font-weight: 250;">Upto 5% off</p>
                   <p class="text-secondary">Shop Now!</p>
                 </div>
               </div>
@@ -393,7 +474,7 @@
                 <img src="./images/books/harmonium_2.webp" class="card-img-top" alt="..." height="130px" width="">
                 <div class="card-body d-flex flex-column text-center">
                   <h5 class="card-title">Harmonium</h5>
-                  <p  class="mt-1.5 mb-1 text-success" style="color: green; font-weight: 250;">Upto 15% off</p>
+                  <p class="mt-1.5 mb-1 text-success" style="color: green; font-weight: 250;">Upto 15% off</p>
                   <p class="text-secondary">Beast Deals Shop Now!</p>
                 </div>
               </div>
@@ -401,17 +482,19 @@
               <div class="card " style="width: 18rem; border: none;">
                 <div class="card-body d-flex flex-column text-center">
                   <h5 class="card-title"></h5>
-                  <p  class="mt-1.5 mb-1 text-success" style="color: green; font-weight: 250;"></p>
+                  <p class="mt-1.5 mb-1 text-success" style="color: green; font-weight: 250;"></p>
                   <p class="text-secondary"></p>
                 </div>
               </div>
 
+
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -424,6 +507,8 @@
 
   </div>
 
+
+  <!-- This is for small screen -->
 
   <div>
     <div class="d-block d-lg-none mt-5">
@@ -484,46 +569,48 @@
             </div>
           </div>
         </li>
-        <li class="list-group-item"><div class="d-flex justify-content-between">
-          <div class="d-flex">
-            <img src="./images/dod/pb.jpeg" alt="" height="100px" width="100px">
-            <div class="d-grid">
-              <h3 class="align-self-end mt-3" style="font-weight: 470;">Power Bank</h3>
-              <p class="text-secondary">Shop Now!</p>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex">
+              <img src="./images/dod/pb.jpeg" alt="" height="100px" width="100px">
+              <div class="d-grid">
+                <h3 class="align-self-end mt-3" style="font-weight: 470;">Power Bank</h3>
+                <p class="text-secondary">Shop Now!</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex">
+              <img src="./images/dod/laptop.jpeg" alt="" height="100px" width="100px">
+              <div class="d-grid">
+                <h3 class="align-self-end mt-3" style="font-weight: 470;">HP Laptops</h3>
+                <p class="text-secondary">Shop Now!</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </li>
+        <li class="list-group-item">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex">
+              <img src="./images/dod/A1500.jpeg" alt="" height="100px" width="100px">
+              <div class="d-grid">
+                <h3 class="align-self-end mt-3" style="font-weight: 470;">Lava A1500</h3>
+                <p class="text-secondary">Shop Now!</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-angle-right"></i>
             </div>
           </div>
-          <div class="d-flex align-items-center">
-            <i class="fa-solid fa-angle-right"></i>
-          </div>
-        
-      </li>
-        <li class="list-group-item"><div class="d-flex justify-content-between">
-          <div class="d-flex">
-            <img src="./images/dod/laptop.jpeg" alt="" height="100px" width="100px">
-            <div class="d-grid">
-              <h3 class="align-self-end mt-3" style="font-weight: 470;">HP Laptops</h3>
-              <p class="text-secondary">Shop Now!</p>
-            </div>
-          </div>
-          <div class="d-flex align-items-center">
-            <i class="fa-solid fa-angle-right"></i>
-          </div>
-        
-      </li>
-      <li class="list-group-item">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex">
-            <img src="./images/dod/A1500.jpeg" alt="" height="100px" width="100px">
-            <div class="d-grid">
-              <h3 class="align-self-end mt-3" style="font-weight: 470;">Lava A1500</h3>
-              <p class="text-secondary">Shop Now!</p>
-            </div>
-          </div>
-          <div class="d-flex align-items-center">
-            <i class="fa-solid fa-angle-right"></i>
-          </div>
-        </div>
-      </li>
+        </li>
       </ul>
     </div>
 
@@ -534,6 +621,7 @@
 
 
 
+  <!-- this is for small screen -->
 
   <div>
     <div class="d-block d-lg-none mt-5">
@@ -542,7 +630,7 @@
         <div class="d-flex gap-2 gap-lg-4 justify-content-between justify-content-lg-start">
           <div class="d-flex h5 my-auto"><span>Books and Music Instruments</span></div>
           <div class="d-flex align-items-center gap-2">
-            
+
             <div class="text-secondary">Shop Now!</div>
           </div>
         </div>
