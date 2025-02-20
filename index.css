@@ -125,20 +125,12 @@ body {
     width: 64px;
     height: 64px;
 }
-
-
-
-
 .deal-of-the-day {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
 }
 
-
-
-
 /* this is for carousel button */
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
  
@@ -147,7 +139,6 @@ body {
     width: auto;
     height: auto;
 }
- 
 .carousel-control-prev,
 .carousel-control-next {
  
@@ -155,9 +146,6 @@ body {
     width: auto;
     height: auto;
 }
-
-
-
 /* Media query to hide search bar on smaller screens */
 @media (max-width: 1030px) {
     .navbar .search-bar {
